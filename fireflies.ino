@@ -8,117 +8,107 @@ void setup() {
   tone(buzzerPin, 1000, 2000);
 }
 
-void loop() {
+void pause() {
+  int PAUSE = 10; // Puase time = 10 ms
+  tone(buzzerPin, 0); // Pause
+  delay(PAUSE);
+}
 
+void loop() {
+  int QUARTER = 342.857;
+  int DQUARTER = 514.286;
+  int EIGTH = 171.4285;
   // 60,000 (ms) ÷ BPM = duration of a quarter note
   tone(buzzerPin, 233.08); // B Flat
-  delay(342.857); // Quarter note = 1 beat
+  delay(QUARTER); // Quarter note = 1 beat
 
-  tone(buzzerPin, 0); // Pause
-  delay(10); 
+  pause(); // distinguishes notes from each other
 
   tone(buzzerPin, 1174.66); // D
-  delay(514.286); // Dotted Quarter = 1.5 beats
+  delay(DQUARTER); // Dotted Quarter = 1.5 beats
 
-  tone(buzzerPin, 0); // Pause
-  delay(10); 
+  pause();
 
   tone(buzzerPin, 932.33); // B Flat 5
-  delay(514.286); // Dotter Quarter
+  delay(DQUARTER); // Dotter Quarter
   
-  tone(buzzerPin, 0); // Pause
-  delay(10);
+  pause();
 
   tone(buzzerPin, 311.13); // E Flat 4
-  delay(342.857); // Quarter note 
+  delay(QUARTER); // Quarter note 
 
-  tone(buzzerPin, 0); // Pause
-  delay(10);
+  pause();
 
   tone(buzzerPin, 698.46); // F5
-  delay(329.67); // Eigth Note = 1/2 beat
+  delay(EIGTH); // Eigth Note = 1/2 beat
 
-  tone(buzzerPin, 0); // Pause
-  delay(10);
+  pause();
 
   tone(buzzerPin, 622.25); // E Flat 5
-  delay(329.67); // Eigth Note
+  delay(EIGTH); // Eigth Note
 
-  tone(buzzerPin, 0); // Pause
-  delay(10);
+  pause();
 
   tone(buzzerPin, 698.46); // F5
-  delay(329.67); // Eigth Note
+  delay(EIGTH); // Eigth Note
 
-  tone(buzzerPin, 0); // Pause
-  delay(10);
+  pause();
 
   tone(buzzerPin, 932.33); // B Flat 5
-  delay(514.286); // Dotted Quarter
+  delay(DQUARTER); // Dotted Quarter
 
-  tone(buzzerPin, 0); // Pause
-  delay(10);
-
-  tone(buzzerPin, 207.65); // A Flat 3
-  delay(342.857); // Quarter
-
-  tone(buzzerPin, 0); // Pause
-  delay(10);
-
-  tone(buzzerPin, 523.25); // C5
-  delay(329.67); // Eigth
-
-  tone(buzzerPin, 0); // Pause
-  delay(10);
-
-  tone(buzzerPin, 466.16); // B Flat 4
-  delay(342.857); // Eigth
-
-  tone(buzzerPin, 0); // Pause
-  delay(10);
-
-  tone(buzzerPin, 523.25); // C5
-  delay(329.67); // Eigth
-
-  tone(buzzerPin, 0); // Pause
-  delay(10);
-
-  tone(buzzerPin, 622.25); // E Flat 5
-  delay(514.286); // Dotted
-
-  tone(buzzerPin, 0); // Pause
-  delay(10);
+  pause();
 
   tone(buzzerPin, 207.65); // A Flat 3
-  delay(342.857); // Quarter
+  delay(QUARTER); // Quarter
 
-  tone(buzzerPin, 0); // Pause
-  delay(10);
+  pause();
 
   tone(buzzerPin, 523.25); // C5
-  delay(329.67); // Eigth
+  delay(EIGTH); // Eigth
 
-  tone(buzzerPin, 0); // Pause
-  delay(10);
+  pause();
 
   tone(buzzerPin, 466.16); // B Flat 4
-  delay(342.857); //Quarter
+  delay(EIGTH); // Eigth
 
-  tone(buzzerPin, 0); // Pause
-  delay(10);  
+  pause();
 
   tone(buzzerPin, 523.25); // C5
-  delay(329.67); // Eigth
+  delay(EIGTH); // Eigth
 
-  tone(buzzerPin, 0); // Pause
-  delay(10);
+  pause();
 
   tone(buzzerPin, 622.25); // E Flat 5
-  delay(329.67); // Eigth
+  delay(DQUARTER); // Dotted
 
-  tone(buzzerPin, 0); // Pause
-  delay(10);
+  pause();
+
+  tone(buzzerPin, 207.65); // A Flat 3
+  delay(QUARTER); // Quarter
+
+  pause();
+
+  tone(buzzerPin, 523.25); // C5
+  delay(EIGTH); // Eigth
+
+  pause();
+
+  tone(buzzerPin, 466.16); // B Flat 4
+  delay(QUARTER); //Quarter
+
+  pause();
+
+  tone(buzzerPin, 523.25); // C5
+  delay(EIGTH); // Eigth
+
+  pause();
+
+  tone(buzzerPin, 622.25); // E Flat 5
+  delay(EIGTH); // Eigth
+
+  pause();
 
   tone(buzzerPin, 698.46); // F5
-  delay(329.67); // Eigth
+  delay(EIGTH); // Eigth
 }
