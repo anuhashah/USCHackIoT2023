@@ -48,7 +48,8 @@ void setup() {
 
 }
 
-void loop() {
+void loop() 
+{
   if (stop==true)
   {
     // put your main code here, to run repeatedly:
@@ -88,8 +89,8 @@ void loop() {
     }
   
     buttonstate=digitalRead(buttonPin);
-     if (buttonstate == HIGH) {
-      
+    if (buttonstate == HIGH) 
+    {
       digitalWrite(buzzerPin, LOW);
       stop=false;
     } 
