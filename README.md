@@ -2,8 +2,8 @@
 
 Readme for IOT Hackathon 2023 - Smart Alarm Clock
 
-The goal of our creation is to wake up the user at the optimal time during sleep. This is established using a mix of a two notable sensors - the ultrasonic sensor and heart rate sensor. A buzzer is used to wake up the user at a predetermined time. 
+The goal of our creation is to wake up the user at the optimal time during sleep. This is established using a mix of a two notable sensors - the ultrasonic sensor and heart rate sensor. A buzzer is used to wake up the user at a predetermined time. The buzzer is coded to play the song "Fireflies" by Owl City, by analyzing the notes of the song and corelating it with the frequency.
 
 Setup begins with the user setting a prefered period of time to wake up in. If the user is still asleep by the end of this period, the alarm is sounded and the user is woken up abruptly. Conversly, if the user triggers the heart rate threashold or the ultrasonic sensor senses movement, the alarm will sound and wake up the user when their sleep is lightest. 
 
-Waking the user up when their sleep is the lightest effectively makes it easier for the user to get out of bed and minimize drowsiness. 
+Waking the user up when their sleep is the lightest effectively makes it easier for the user to get out of bed and minimize drowsiness. This comprehensive approach to alarm functionality earned our project first place, by incorporating personalized sleep cycle analysis and musical synchronization.
